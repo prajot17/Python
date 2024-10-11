@@ -1,0 +1,18 @@
+class mydate:
+         def accept(self):
+                    self.d=int(input("enter day:"))
+                    self.m=int(input("enter month:"))
+                    self.y=int(input("enter year:"))
+         def display(self):
+                    try:
+                         if self.d>31:
+                                 raise valueError("day value is greater than 31")
+                         if self.m>12:
+                                 raise valueError("month value is greater than 12")
+                                 print("date is:",self.d,"-",self.m,"-",self.y)
+                    except valueError as e:
+                     print(e)
+obj=mydate()
+obj.accept()
+obj.display()
+         
