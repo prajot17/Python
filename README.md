@@ -1,7 +1,7 @@
 # Python
 class LoginPage:
-    def __init__(self):
-        self.users = {}
+def __init__(self):
+self.users = {}
 
     def register(self):
         """Register a new user"""
